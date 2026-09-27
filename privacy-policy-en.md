@@ -1,8 +1,8 @@
 # Privacy Policy
 
-**Effective date:** September 4, 2026
+**Effective date:** September 27, 2026
 
-This Privacy Policy explains how the Remind Me Alan mobile application ("the App"), published by John-Christian Wahlberg ("we", "us", "our"), handles your information. We designed the App around a simple principle: **your data stays on your device.**
+This Privacy Policy explains how the Remind Me Alan mobile application ("the App"), published by John-Christian Wahlberg ("we", "us", "our"), handles your information. John-Christian Wahlberg is the data controller for the personal data processing described in this policy. We designed the App around a simple principle: **your reminders and personal settings stay on your device.** The only exception is the limited data needed to process subscription purchases, described in Section 5.
 
 ## 1. What information the App stores
 
@@ -12,41 +12,49 @@ To provide its features, the App stores the following on your device only, using
 - The reminders you create (name, icon, time, repeat rule, and any per-reminder sound or one-day exception you set)
 - Your preferences (notification sound, vibration setting, and language)
 
-That is the entirety of the information the App handles. We do not ask for your email address, phone number, contacts, location, photos, or any other personal information beyond what is listed above, and there is no account or sign-in of any kind.
+That is the entirety of the personal information the App stores on your device. If you subscribe, a small amount of additional purchase-related information is also shared with Apple and RevenueCat — see Section 5. We do not ask for your email address, phone number, contacts, location, photos, or any other personal information beyond what is listed above, and there is no account or sign-in of any kind.
 
 ## 2. Where this information is stored — and where it is not
 
 All of the information listed above is stored **locally on your device** and is **never transmitted to us or to any server**. We do not operate any backend, database, or cloud storage for the App, so we never receive, see, or have access to your reminders, your name, or your preferences. There is nothing for us to lose, leak, or sell, because we never receive it in the first place.
 
-## 3. No collection, tracking, advertising, or analytics
+## 3. No advertising or tracking
 
-The App does not collect analytics, does not include advertising or ad networks, does not use third-party tracking software development kits (SDKs), and does not profile or track your behavior in any way, inside or outside the App.
+The App does not include advertising or ad networks, and does not track you across other companies' apps or websites for advertising purposes ("tracking" as defined by Apple). The only third-party software component the App uses is RevenueCat, described in Section 5, which processes purchase history for subscription management and basic subscription analytics — it does not track you and is not used for advertising. Beyond that, the App does not otherwise collect analytics or profile your behavior.
 
 ## 4. Notifications
 
 The App schedules local notifications directly on your device through iOS's own notification system, based on the reminders you create. These notifications are generated and delivered entirely on-device; no notification content is sent through, or handled by, any external server operated by us.
 
-## 5. Payments and subscriptions
+## 5. Payments, subscriptions, and RevenueCat
 
-If you purchase a subscription, the entire transaction is handled by Apple through the App Store and your Apple ID. We never receive, see, or store your payment card details, billing address, or any other payment information — that information is held exclusively by Apple, subject to Apple's own privacy practices.
+If you purchase a subscription, the entire payment transaction is handled by Apple through the App Store and your Apple ID. We never receive, see, or store your payment card details, billing address, or any other payment information — that information is held exclusively by Apple, subject to Apple's own privacy practices.
+
+We use RevenueCat (RevenueCat, Inc., based in the United States) to manage and verify your subscription and to support the "Restore Purchases" feature. RevenueCat processes this data on our behalf as our data processor, under our instructions.
+
+RevenueCat receives your purchase history (such as which subscription you bought, when, and its current status) together with a random ID used to link that history to you. This random ID counts as personal data under the GDPR, even though it is not your name, email address, or any other directly identifying detail. RevenueCat does not receive your payment card details; those remain exclusively with Apple, as described above.
+
+The legal basis for this processing is the performance of your subscription contract with us. We keep this purchase history for as long as your subscription is active, and afterwards only for as long as required by law (for example, accounting and tax record-keeping obligations).
+
+This data is transferred to, and stored in, the United States, using appropriate safeguards such as the European Commission's Standard Contractual Clauses. RevenueCat does not use it for advertising or cross-app tracking. Your reminders, name, and other app settings continue to be stored only on your device and are never sent to RevenueCat or anywhere else. You can read RevenueCat's own privacy policy at https://www.revenuecat.com/privacy.
 
 ## 6. Children's privacy
 
-The App is not directed at children and is not intended to collect personal information from children. Since the App does not transmit any information off your device in the first place, no personal information about a child (or anyone else) is ever received or stored by us. If you are a parent or guardian and believe a child has used the App, you can remove any locally stored information at any time using the deletion methods described below.
+The App is not directed at children and is not intended to collect personal information from children. Beyond the limited subscription data described in Section 5 — which is handled the same way for any subscriber, regardless of age — the App does not transmit any other information off your device, so no other personal information about a child (or anyone else) is ever received or stored by us. If you are a parent or guardian and believe a child has used the App, you can remove any locally stored information at any time using the deletion methods described below.
 
 ## 7. How to delete your data
 
-Because all data lives only on your device, you are always in full control of it. You can:
+You can:
 
 - Delete individual reminders directly in the App, or
 - Use "Delete all reminders" in the App's Settings screen to remove every reminder at once, or
-- Uninstall the App, which removes all of its locally stored data from your device.
+- Uninstall the App, which immediately removes all of its locally stored data (reminders, name, and settings) from your device.
 
-Since we never receive a copy of your data, there is no separate "delete my data" request to send us — deleting it on your device is complete and final.
+Uninstalling the App does not delete your purchase history held by RevenueCat — that record is kept as described in Section 5. If you would like your RevenueCat purchase history deleted, email us at remindmealan@gmail.com and we will forward your request to RevenueCat.
 
 ## 8. Your rights (GDPR and other privacy laws)
 
-If you are located in the European Economic Area, the United Kingdom, or another jurisdiction with similar data protection laws, you may have rights such as the right to access, correct, delete, or port your personal data, and the right to object to or restrict certain processing. In practice, because the App does not collect or transmit personal data to us, there is generally no data held by us for these rights to act upon — your data resides solely on your device, under your own control, at all times. If you have any privacy questions or requests, you can still contact us using the details below.
+If you are located in the European Economic Area, the United Kingdom, or another jurisdiction with similar data protection laws, you may have rights such as the right to access, correct, delete, or port your personal data, and the right to object to or restrict certain processing. Your reminders, name, and other app settings are stored solely on your device, under your own control, at all times, so there is generally no such data held by us for these rights to act upon. These rights also apply to the purchase-history data processed via RevenueCat as described in Section 5 — to exercise them, contact us using the details below, the same as for any other privacy request. You also have the right to lodge a complaint with a data protection supervisory authority — in Sweden, the Swedish Authority for Privacy Protection (Integritetsskyddsmyndigheten, IMY), imy.se.
 
 ## 9. Changes to this policy
 
