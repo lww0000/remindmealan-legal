@@ -1,49 +1,64 @@
+{%- assign is_sv = false -%}
+{%- if page.url contains '-sv' -%}{%- assign is_sv = true -%}{%- endif -%}
+{%- assign page_path = page.url | replace: '.html', '' -%}
+{%- if is_sv -%}
+  {%- assign other_path = page_path | replace: '-sv', '-en' -%}
+{%- else -%}
+  {%- assign other_path = page_path | replace: '-en', '-sv' -%}
+{%- endif -%}
 <!DOCTYPE html>
-<html lang="{% if page.url contains '-sv' %}sv{% else %}en{% endif %}">
+<html lang="{% if is_sv %}sv{% else %}en{% endif %}">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FFFFFF">
 <title>{% if page.title %}{{ page.title }} – {% endif %}Remind Me Alan</title>
-<style>
-  :root { --orange:#F4581C; --peach:#FFC79C; --text:#1F1F1F; --muted:#6B6B6B; --card:#FFF6EF; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--text); background:#fff; line-height:1.65; }
-  header { background:linear-gradient(135deg,var(--orange),#FF8A4C); color:#fff; text-align:center; padding:36px 20px 30px; }
-  header a { color:#fff; text-decoration:none; }
-  .logo { width:64px; height:64px; margin:0 auto 10px; background:var(--peach); border-radius:18px; display:flex; align-items:center; justify-content:center; font-size:36px; box-shadow:0 6px 18px rgba(0,0,0,.15); }
-  .brand { font-size:20px; font-weight:700; }
-  main { max-width:720px; margin:0 auto; padding:28px 20px 40px; }
-  main h1 { font-size:28px; line-height:1.25; margin:0 0 20px; }
-  main h2 { font-size:20px; margin:32px 0 10px; padding-top:16px; border-top:2px solid var(--card); color:var(--orange); }
-  main h3 { font-size:17px; margin:22px 0 6px; }
-  main p, main li { color:#333; }
-  main ul, main ol { padding-left:22px; }
-  main a { color:var(--orange); word-break:break-word; }
-  main table { width:100%; border-collapse:collapse; margin:16px 0; font-size:15px; display:block; overflow-x:auto; }
-  main th, main td { border:1px solid #eee; padding:8px 10px; text-align:left; vertical-align:top; }
-  main th { background:var(--card); }
-  main blockquote { margin:16px 0; padding:12px 16px; background:var(--card); border-left:4px solid var(--orange); border-radius:8px; }
-  main code { background:var(--card); padding:2px 6px; border-radius:6px; }
-  footer { text-align:center; color:var(--muted); font-size:14px; padding:0 20px 36px; }
-  footer a { color:var(--orange); }
-</style>
+<link rel="icon" type="image/png" href="{{ '/icon.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/icon.png' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
-<header>
-  <a href="{{ '/support' | relative_url }}">
-    <div class="logo">🐘</div>
-    <div class="brand">Remind Me Alan</div>
-  </a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="{{ '/support' | relative_url }}">
+      <img class="app-icon" src="{{ '/icon.png' | relative_url }}" alt="" width="34" height="34">
+      <span>Remind Me Alan</span>
+    </a>
+    <a class="pill-link" href="{{ '/support' | relative_url }}">Support</a>
+  </div>
 </header>
-<main>
+
+<div class="hero legal-hero">
+  <div class="container">
+    <span class="eyebrow">{% if is_sv %}Juridiskt{% else %}Legal{% endif %}</span>
+    {%- if page_path != other_path %}
+    <a class="lang-link" href="{{ other_path | relative_url }}" hreflang="{% if is_sv %}en{% else %}sv{% endif %}" lang="{% if is_sv %}en{% else %}sv{% endif %}">{% if is_sv %}Read in English →{% else %}Läs på svenska →{% endif %}</a>
+    {%- endif %}
+  </div>
+</div>
+
+<main class="container legal-main">
+  <article class="doc prose">
 {{ content }}
+  </article>
 </main>
-<footer>
-{% if page.url contains '-sv' %}
-  <a href="{{ '/privacy-policy-sv' | relative_url }}">Integritetspolicy</a> · <a href="{{ '/terms-of-use-sv' | relative_url }}">Användarvillkor</a> · <a href="{{ '/support' | relative_url }}">Support</a>
-{% else %}
-  <a href="{{ '/privacy-policy-en' | relative_url }}">Privacy Policy</a> · <a href="{{ '/terms-of-use-en' | relative_url }}">Terms of Use</a> · <a href="{{ '/support' | relative_url }}">Support</a>
-{% endif %}
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+{%- if is_sv %}
+      <li><a href="{{ '/privacy-policy-sv' | relative_url }}"{% if page_path == '/privacy-policy-sv' %} aria-current="page"{% endif %}>Integritetspolicy</a></li>
+      <li><a href="{{ '/terms-of-use-sv' | relative_url }}"{% if page_path == '/terms-of-use-sv' %} aria-current="page"{% endif %}>Användarvillkor</a></li>
+      <li><a href="{{ '/support' | relative_url }}">Support</a></li>
+{%- else %}
+      <li><a href="{{ '/privacy-policy-en' | relative_url }}"{% if page_path == '/privacy-policy-en' %} aria-current="page"{% endif %}>Privacy Policy</a></li>
+      <li><a href="{{ '/terms-of-use-en' | relative_url }}"{% if page_path == '/terms-of-use-en' %} aria-current="page"{% endif %}>Terms of Use</a></li>
+      <li><a href="{{ '/support' | relative_url }}">Support</a></li>
+{%- endif %}
+    </ul>
+    <p class="footer-brand"><img src="{{ '/icon.png' | relative_url }}" alt="" width="20" height="20">© {{ site.time | date: '%Y' }} Remind Me Alan</p>
+  </div>
 </footer>
 </body>
 </html>

@@ -1,70 +1,105 @@
+---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FFF5EE">
 <title>Remind Me Alan – Support</title>
-<style>
-  :root { --orange:#F4581C; --peach:#FFC79C; --text:#1F1F1F; --muted:#6B6B6B; --card:#FFF6EF; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--text); background:#fff; line-height:1.55; }
-  header { background:linear-gradient(135deg,var(--orange),#FF8A4C); color:#fff; text-align:center; padding:48px 20px 40px; }
-  .logo { width:84px; height:84px; margin:0 auto 14px; background:var(--peach); border-radius:22px; display:flex; align-items:center; justify-content:center; font-size:46px; box-shadow:0 6px 18px rgba(0,0,0,.15); }
-  h1 { margin:0; font-size:28px; }
-  header p { margin:6px 0 0; opacity:.9; }
-  main { max-width:640px; margin:0 auto; padding:24px 20px 48px; }
-  .lang { display:flex; gap:8px; justify-content:center; margin:0 0 24px; }
-  .lang button { border:2px solid var(--orange); background:#fff; color:var(--orange); padding:8px 18px; border-radius:999px; font-size:15px; font-weight:600; cursor:pointer; }
-  .lang button.active { background:var(--orange); color:#fff; }
-  .contact { background:var(--orange); color:#fff; border-radius:18px; padding:20px; text-align:center; margin-bottom:24px; }
-  .contact a { color:#fff; font-weight:700; font-size:18px; }
-  .card { background:var(--card); border-radius:16px; padding:16px 18px; margin-bottom:12px; }
-  .card h3 { margin:0 0 4px; font-size:17px; }
-  .card p { margin:0; color:var(--muted); }
-  footer { text-align:center; color:var(--muted); font-size:14px; padding-bottom:32px; }
-  footer a { color:var(--orange); }
-  [data-lang] { display:none; }
-  [data-lang].show { display:block; }
-</style>
+<link rel="icon" type="image/png" href="{{ '/icon.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/icon.png' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
-<header>
-  <div class="logo">🐘</div>
-  <h1>Remind Me Alan</h1>
-  <p data-lang="en" class="show">Support</p>
-  <p data-lang="sv">Support</p>
-</header>
-<main>
-  <div class="lang">
-    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
-    <button id="btn-sv" onclick="setLang('sv')">Svenska</button>
+<header class="hero support-hero">
+  <div class="container">
+    <img class="app-icon" src="{{ '/icon.png' | relative_url }}" alt="" width="104" height="104">
+    <h1>Remind Me Alan</h1>
+    <p data-lang="en" class="show">Support</p>
+    <p data-lang="sv">Support</p>
+    <div class="segmented" role="group" aria-label="Language / Språk">
+      <button type="button" id="btn-en" class="active" aria-pressed="true" lang="en" onclick="setLang('en')">English</button>
+      <button type="button" id="btn-sv" aria-pressed="false" lang="sv" onclick="setLang('sv')">Svenska</button>
+    </div>
   </div>
+</header>
 
+<main class="container support-main">
   <section data-lang="en" class="show">
-    <div class="contact">Need help? Email us and we'll get back to you as soon as we can.<br><br><a href="mailto:remindmealan@gmail.com">remindmealan@gmail.com</a></div>
-    <div class="card"><h3>Not getting notifications?</h3><p>Open the iPhone Settings app → Notifications → Remind Me, and make sure notifications are allowed.</p></div>
-    <div class="card"><h3>How do I cancel my subscription?</h3><p>Open the iPhone Settings app → tap your name → Subscriptions → Remind Me Alan.</p></div>
-    <div class="card"><h3>How do I restore my purchase?</h3><p>Open the subscription screen in the app and tap Restore.</p></div>
-    <div class="card"><h3>Where are my reminders stored?</h3><p>Only on your phone. If you delete the app, your reminders are deleted too.</p></div>
+    <div class="contact-card">
+      <p>Need help? Email us and we'll get back to you as soon as we can.</p>
+      <a class="mail-button" href="mailto:remindmealan@gmail.com"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>remindmealan@gmail.com</a>
+    </div>
+    <div class="faq">
+      <div class="faq-card">
+        <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>
+        <div><h3>Not getting notifications?</h3><p>Open the iPhone Settings app → Notifications → Remind Me, and make sure notifications are allowed.</p></div>
+      </div>
+      <div class="faq-card">
+        <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20"/><path d="M6 15h4"/></svg></span>
+        <div><h3>How do I cancel my subscription?</h3><p>Open the iPhone Settings app → tap your name → Subscriptions → Remind Me Alan.</p></div>
+      </div>
+      <div class="faq-card">
+        <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></span>
+        <div><h3>How do I restore my purchase?</h3><p>Open the subscription screen in the app and tap Restore.</p></div>
+      </div>
+      <div class="faq-card">
+        <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span>
+        <div><h3>Where are my reminders stored?</h3><p>Only on your phone. If you delete the app, your reminders are deleted too.</p></div>
+      </div>
+    </div>
   </section>
 
   <section data-lang="sv">
-    <div class="contact">Behöver du hjälp? Mejla oss så svarar vi så snart vi kan.<br><br><a href="mailto:remindmealan@gmail.com">remindmealan@gmail.com</a></div>
-    <div class="card"><h3>Får du inga notiser?</h3><p>Öppna appen Inställningar på iPhone → Notiser → Remind Me, och kontrollera att notiser är tillåtna.</p></div>
-    <div class="card"><h3>Hur avslutar jag min prenumeration?</h3><p>Öppna appen Inställningar på iPhone → tryck på ditt namn → Prenumerationer → Remind Me Alan.</p></div>
-    <div class="card"><h3>Hur återställer jag mitt köp?</h3><p>Öppna prenumerationsskärmen i appen och tryck på Återställ.</p></div>
-    <div class="card"><h3>Var sparas mina påminnelser?</h3><p>Bara i din telefon. Om du raderar appen raderas även påminnelserna.</p></div>
+    <div class="contact-card">
+      <p>Behöver du hjälp? Mejla oss så svarar vi så snart vi kan.</p>
+      <a class="mail-button" href="mailto:remindmealan@gmail.com"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>remindmealan@gmail.com</a>
+    </div>
+    <div class="faq">
+      <div class="faq-card">
+        <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>
+        <div><h3>Får du inga notiser?</h3><p>Öppna appen Inställningar på iPhone → Notiser → Remind Me, och kontrollera att notiser är tillåtna.</p></div>
+      </div>
+      <div class="faq-card">
+        <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20"/><path d="M6 15h4"/></svg></span>
+        <div><h3>Hur avslutar jag min prenumeration?</h3><p>Öppna appen Inställningar på iPhone → tryck på ditt namn → Prenumerationer → Remind Me Alan.</p></div>
+      </div>
+      <div class="faq-card">
+        <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></span>
+        <div><h3>Hur återställer jag mitt köp?</h3><p>Öppna prenumerationsskärmen i appen och tryck på Återställ.</p></div>
+      </div>
+      <div class="faq-card">
+        <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span>
+        <div><h3>Var sparas mina påminnelser?</h3><p>Bara i din telefon. Om du raderar appen raderas även påminnelserna.</p></div>
+      </div>
+    </div>
   </section>
 </main>
-<footer>
-  <span data-lang="en" class="show"><a href="privacy-policy-en">Privacy Policy</a> · <a href="terms-of-use-en">Terms of Use</a></span>
-  <span data-lang="sv"><a href="privacy-policy-sv">Integritetspolicy</a> · <a href="terms-of-use-sv">Användarvillkor</a></span>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links show" data-lang="en">
+      <li><a href="{{ '/privacy-policy-en' | relative_url }}">Privacy Policy</a></li>
+      <li><a href="{{ '/terms-of-use-en' | relative_url }}">Terms of Use</a></li>
+    </ul>
+    <ul class="footer-links" data-lang="sv">
+      <li><a href="{{ '/privacy-policy-sv' | relative_url }}">Integritetspolicy</a></li>
+      <li><a href="{{ '/terms-of-use-sv' | relative_url }}">Användarvillkor</a></li>
+    </ul>
+    <p class="footer-brand"><img src="{{ '/icon.png' | relative_url }}" alt="" width="20" height="20">© {{ site.time | date: '%Y' }} Remind Me Alan</p>
+  </div>
 </footer>
 <script>
   function setLang(l){
     document.querySelectorAll('[data-lang]').forEach(e=>e.classList.toggle('show',e.dataset.lang===l));
-    document.getElementById('btn-en').classList.toggle('active',l==='en');
-    document.getElementById('btn-sv').classList.toggle('active',l==='sv');
+    ['en','sv'].forEach(function(k){
+      var b=document.getElementById('btn-'+k);
+      b.classList.toggle('active',k===l);
+      b.setAttribute('aria-pressed',k===l?'true':'false');
+    });
     document.documentElement.lang=l;
   }
   if((navigator.language||'').toLowerCase().startsWith('sv')) setLang('sv');
