@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Remind Me Alan – Support</title>
+<style>
+  :root { --orange:#F4581C; --peach:#FFC79C; --text:#1F1F1F; --muted:#6B6B6B; --card:#FFF6EF; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--text); background:#fff; line-height:1.55; }
+  header { background:linear-gradient(135deg,var(--orange),#FF8A4C); color:#fff; text-align:center; padding:48px 20px 40px; }
+  .logo { width:84px; height:84px; margin:0 auto 14px; background:var(--peach); border-radius:22px; display:flex; align-items:center; justify-content:center; font-size:46px; box-shadow:0 6px 18px rgba(0,0,0,.15); }
+  h1 { margin:0; font-size:28px; }
+  header p { margin:6px 0 0; opacity:.9; }
+  main { max-width:640px; margin:0 auto; padding:24px 20px 48px; }
+  .lang { display:flex; gap:8px; justify-content:center; margin:0 0 24px; }
+  .lang button { border:2px solid var(--orange); background:#fff; color:var(--orange); padding:8px 18px; border-radius:999px; font-size:15px; font-weight:600; cursor:pointer; }
+  .lang button.active { background:var(--orange); color:#fff; }
+  .contact { background:var(--orange); color:#fff; border-radius:18px; padding:20px; text-align:center; margin-bottom:24px; }
+  .contact a { color:#fff; font-weight:700; font-size:18px; }
+  .card { background:var(--card); border-radius:16px; padding:16px 18px; margin-bottom:12px; }
+  .card h3 { margin:0 0 4px; font-size:17px; }
+  .card p { margin:0; color:var(--muted); }
+  footer { text-align:center; color:var(--muted); font-size:14px; padding-bottom:32px; }
+  footer a { color:var(--orange); }
+  [data-lang] { display:none; }
+  [data-lang].show { display:block; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">🐘</div>
+  <h1>Remind Me Alan</h1>
+  <p data-lang="en" class="show">Support</p>
+  <p data-lang="sv">Support</p>
+</header>
+<main>
+  <div class="lang">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-sv" onclick="setLang('sv')">Svenska</button>
+  </div>
+
+  <section data-lang="en" class="show">
+    <div class="contact">Need help? Email us and we'll get back to you as soon as we can.<br><br><a href="mailto:remindmealan@gmail.com">remindmealan@gmail.com</a></div>
+    <div class="card"><h3>Not getting notifications?</h3><p>Open the iPhone Settings app → Notifications → Remind Me, and make sure notifications are allowed.</p></div>
+    <div class="card"><h3>How do I cancel my subscription?</h3><p>Open the iPhone Settings app → tap your name → Subscriptions → Remind Me Alan.</p></div>
+    <div class="card"><h3>How do I restore my purchase?</h3><p>Open the subscription screen in the app and tap Restore.</p></div>
+    <div class="card"><h3>Where are my reminders stored?</h3><p>Only on your phone. If you delete the app, your reminders are deleted too.</p></div>
+  </section>
+
+  <section data-lang="sv">
+    <div class="contact">Behöver du hjälp? Mejla oss så svarar vi så snart vi kan.<br><br><a href="mailto:remindmealan@gmail.com">remindmealan@gmail.com</a></div>
+    <div class="card"><h3>Får du inga notiser?</h3><p>Öppna appen Inställningar på iPhone → Notiser → Remind Me, och kontrollera att notiser är tillåtna.</p></div>
+    <div class="card"><h3>Hur avslutar jag min prenumeration?</h3><p>Öppna appen Inställningar på iPhone → tryck på ditt namn → Prenumerationer → Remind Me Alan.</p></div>
+    <div class="card"><h3>Hur återställer jag mitt köp?</h3><p>Öppna prenumerationsskärmen i appen och tryck på Återställ.</p></div>
+    <div class="card"><h3>Var sparas mina påminnelser?</h3><p>Bara i din telefon. Om du raderar appen raderas även påminnelserna.</p></div>
+  </section>
+</main>
+<footer>
+  <span data-lang="en" class="show"><a href="privacy-policy-en">Privacy Policy</a> · <a href="terms-of-use-en">Terms of Use</a></span>
+  <span data-lang="sv"><a href="privacy-policy-sv">Integritetspolicy</a> · <a href="terms-of-use-sv">Användarvillkor</a></span>
+</footer>
+<script>
+  function setLang(l){
+    document.querySelectorAll('[data-lang]').forEach(e=>e.classList.toggle('show',e.dataset.lang===l));
+    document.getElementById('btn-en').classList.toggle('active',l==='en');
+    document.getElementById('btn-sv').classList.toggle('active',l==='sv');
+    document.documentElement.lang=l;
+  }
+  if((navigator.language||'').toLowerCase().startsWith('sv')) setLang('sv');
+</script>
+</body>
+</html>
