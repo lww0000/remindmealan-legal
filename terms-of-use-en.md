@@ -1,6 +1,6 @@
 # Terms of Use
 
-**Effective date:** September 4, 2026
+**Effective date:** October 2, 2026
 
 These Terms of Use ("Terms") govern your use of the Remind Me Alan mobile application ("the App"), published by John-Christian Wahlberg ("we", "us", "our"). By downloading, installing, or using the App, you agree to these Terms. If you do not agree, please do not use the App.
 
@@ -14,12 +14,13 @@ Subject to your compliance with these Terms, we grant you a limited, personal, n
 
 ## 3. Subscription terms
 
-Certain features of the App may require a paid subscription (offered on a monthly or annual basis, with a 3-day free trial for new subscribers). All purchases, trials, subscriptions, and related billing are handled entirely by Apple through the App Store and your Apple ID — the App itself never receives or stores your payment details.
+Using the App requires a paid subscription (offered on a monthly or annual basis). New subscribers are offered a 3-day free trial on the monthly subscription; the annual subscription is charged from the start. Whether you are eligible for the trial is determined by Apple, and the App shows trial wording only when Apple confirms you are eligible. All purchases, trials, subscriptions, and related billing are handled entirely by Apple through the App Store and your Apple ID — the App itself never receives or stores your payment details.
 
 - **Pricing** is set by Apple and shown to you in the App Store at the time of purchase; prices may change, so please refer to the price displayed in the App Store rather than any figure quoted elsewhere.
 - **Auto-renewal**: subscriptions automatically renew unless auto-renewal is turned off at least 24 hours before the end of the current period, in accordance with Apple's standard subscription terms.
 - **Cancellation**: you can cancel or manage your subscription at any time in your device's App Store account settings.
 - **Refunds** are handled by Apple in accordance with Apple's own refund policies; we do not process refunds directly and have no ability to do so, since we never receive your payment information.
+- **Restoring purchases**: if you reinstall the App or use a new device, "Restore purchases" on the subscription screen restores an active subscription tied to your Apple ID.
 
 ## 4. Permitted use
 
@@ -45,7 +46,7 @@ We may update, modify, or discontinue features of the App at any time. We may al
 
 ## 9. Termination
 
-You may stop using the App at any time by deleting it from your device. We may suspend or terminate your access to the App if you violate these Terms. Because the App does not use accounts, "termination" primarily means your license to use the App ending — any data stored locally on your device remains under your own control and can be removed by deleting your reminders in-app or uninstalling the App.
+You may stop using the App at any time by deleting it from your device. If you violate these Terms, your license to use the App ends; because the App has no accounts, we have no technical means to disable it on your device. Any data stored locally on your device remains under your own control: you can delete your reminders in the App, and uninstalling the App removes everything it has stored, including your name and settings.
 
 ## 10. Governing law
 

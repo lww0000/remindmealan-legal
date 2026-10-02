@@ -1,6 +1,6 @@
 # Användarvillkor
 
-**Ikraftträdandedatum:** 2026-09-04
+**Ikraftträdandedatum:** 2026-10-02
 
 Dessa användarvillkor ("Villkoren") reglerar din användning av mobilappen Remind Me Alan ("Appen"), utgiven av John-Christian Wahlberg ("vi", "oss", "vår"). Genom att ladda ner, installera eller använda Appen godkänner du dessa Villkor. Om du inte godkänner Villkoren ber vi dig att inte använda Appen.
 
@@ -14,12 +14,13 @@ Under förutsättning att du följer dessa Villkor ger vi dig en begränsad, per
 
 ## 3. Prenumerationsvillkor
 
-Vissa funktioner i Appen kan kräva en betald prenumeration (som erbjuds månadsvis eller årsvis, med en 3 dagars gratis provperiod för nya prenumeranter). Alla köp, provperioder, prenumerationer och tillhörande betalning hanteras helt av Apple via App Store och ditt Apple-ID — Appen själv tar aldrig emot eller lagrar dina betaluppgifter.
+Användning av Appen kräver en betald prenumeration (som erbjuds månadsvis eller årsvis). Nya prenumeranter erbjuds en 3 dagars gratis provperiod på månadsprenumerationen; årsprenumerationen debiteras från start. Om du är berättigad till provperioden avgörs av Apple, och Appen visar text om provperiod endast när Apple bekräftar att du är berättigad. Alla köp, provperioder, prenumerationer och tillhörande betalning hanteras helt av Apple via App Store och ditt Apple-ID — Appen själv tar aldrig emot eller lagrar dina betaluppgifter.
 
 - **Prissättning** bestäms av Apple och visas för dig i App Store vid köptillfället; priser kan ändras, så se det pris som visas i App Store snarare än något pris som anges någon annanstans.
 - **Automatisk förnyelse**: prenumerationer förnyas automatiskt om inte automatisk förnyelse stängs av senast 24 timmar innan innevarande period löper ut, i enlighet med Apples standardvillkor för prenumerationer.
 - **Uppsägning**: du kan när som helst säga upp eller hantera din prenumeration i din enhets kontoinställningar för App Store.
 - **Återbetalningar** hanteras av Apple i enlighet med Apples egna återbetalningsregler; vi hanterar inte återbetalningar direkt och har ingen möjlighet att göra det, eftersom vi aldrig tar emot dina betaluppgifter.
+- **Återställa köp**: om du installerar om Appen eller byter enhet återställer "Återställ köp" på prenumerationsskärmen en aktiv prenumeration kopplad till ditt Apple-ID.
 
 ## 4. Tillåten användning
 
@@ -37,7 +38,7 @@ APPEN TILLHANDAHÅLLS "I BEFINTLIGT SKICK" OCH "SÅSOM TILLGÄNGLIG", UTAN GARAN
 
 ## 7. Ansvarsbegränsning
 
-I DEN UTSTRÄCKNING SOM TILLÄMPLIG LAG TILLÅTER SKA John-Christian Wahlberg INTE HÅLLAS ANSVARIGT FÖR NÅGRA INDIREKTA, TILLFÄLLIGA, SÄRSKILDA SKADOR, FÖLJDSKADOR ELLER STRAFFSKADESTÅND, ELLER FÖRLUST AV DATA, SOM UPPSTÅR UR ELLER I SAMBAND MED DIN ANVÄNDNING AV (ELLER OFÖRMÅGA ATT ANVÄNDA) APPEN, INKLUSIVE EN MISSAD, FÖRSENAD ELLER UTEBLIVEN NOTIS, ÄVEN OM VI HAR INFORMERATS OM MÖJLIGHETEN TILL SÅDANA SKADOR. INGET I DESSA VILLKOR UTESLUTER ELLER BEGRÄNSAR ANSVAR SOM INTE LAGLIGEN KAN UTESLUTAS ELLER BEGRÄNSAS ENLIGT TILLÄMPLIG LAG.
+I DEN UTSTRÄCKNING SOM TILLÄMPLIG LAG TILLÅTER SKA John-Christian Wahlberg INTE HÅLLAS ANSVARIG FÖR NÅGRA INDIREKTA, TILLFÄLLIGA, SÄRSKILDA SKADOR, FÖLJDSKADOR ELLER STRAFFSKADESTÅND, ELLER FÖRLUST AV DATA, SOM UPPSTÅR UR ELLER I SAMBAND MED DIN ANVÄNDNING AV (ELLER OFÖRMÅGA ATT ANVÄNDA) APPEN, INKLUSIVE EN MISSAD, FÖRSENAD ELLER UTEBLIVEN NOTIS, ÄVEN OM VI HAR INFORMERATS OM MÖJLIGHETEN TILL SÅDANA SKADOR. INGET I DESSA VILLKOR UTESLUTER ELLER BEGRÄNSAR ANSVAR SOM INTE LAGLIGEN KAN UTESLUTAS ELLER BEGRÄNSAS ENLIGT TILLÄMPLIG LAG.
 
 ## 8. Ändringar av Appen och dessa Villkor
 
@@ -45,7 +46,7 @@ Vi kan när som helst uppdatera, ändra eller avveckla funktioner i Appen. Vi ka
 
 ## 9. Uppsägning
 
-Du kan när som helst sluta använda Appen genom att radera den från din enhet. Vi kan stänga av eller avsluta din tillgång till Appen om du bryter mot dessa Villkor. Eftersom Appen inte använder konton innebär "uppsägning" i första hand att din licens att använda Appen upphör — all data som lagras lokalt på din enhet förblir under din egen kontroll och kan tas bort genom att radera dina påminnelser i Appen eller avinstallera Appen.
+Du kan när som helst sluta använda Appen genom att radera den från din enhet. Om du bryter mot dessa Villkor upphör din licens att använda Appen; eftersom Appen inte har konton har vi inga tekniska medel att inaktivera den på din enhet. All data som lagras lokalt på din enhet förblir under din egen kontroll: du kan radera dina påminnelser i Appen, och att avinstallera Appen tar bort allt den har lagrat, inklusive ditt namn och dina inställningar.
 
 ## 10. Tillämplig lag
 
