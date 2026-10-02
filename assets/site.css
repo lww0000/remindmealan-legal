@@ -433,55 +433,14 @@ a:focus-visible, button:focus-visible {
 
 .support-main { padding-top: 8px; padding-bottom: 32px; }
 
-.contact-card {
-  position: relative;
-  overflow: hidden;
-  margin: 0 0 28px;
-  padding: 26px 22px;
-  border-radius: 24px;
-  background: linear-gradient(140deg, #F76A30 0%, var(--orange) 55%, #E04A12 100%);
-  color: #fff;
-  text-align: center;
-  box-shadow: 0 14px 34px rgba(244, 88, 28, .30);
-}
-.contact-card::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  top: -90px;
-  right: -60px;
-  border-radius: 50%;
-  background: rgba(255, 199, 156, .28);
-}
-.contact-card p {
-  position: relative;
-  margin: 0 0 18px;
-  font-size: 17px;
+.contact-note {
+  margin: 40px 0 0;
+  font-size: 13px;
   line-height: 1.5;
-  font-weight: 500;
+  color: var(--muted);
+  text-align: center;
 }
-.mail-button {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  max-width: 100%;
-  min-height: 50px;
-  padding: 0 22px;
-  border-radius: 999px;
-  background: #fff;
-  color: var(--orange-dark);
-  font-weight: 700;
-  font-size: 16px;
-  text-decoration: none;
-  box-shadow: 0 4px 14px rgba(92, 40, 10, .18);
-  overflow-wrap: anywhere;
-  transition: transform .15s ease;
-}
-.mail-button:active { transform: scale(.97); }
-.mail-button svg { flex: none; }
+.contact-note a { color: inherit; }
 
 .faq { display: grid; gap: 12px; }
 
@@ -530,8 +489,6 @@ a:focus-visible, button:focus-visible {
   .support-hero { padding: 72px 0 48px; }
   .support-hero .app-icon { width: 120px; height: 120px; }
   .support-hero h1 { font-size: 40px; }
-  .contact-card { padding: 36px 32px; }
-  .contact-card p { font-size: 19px; }
   .faq { grid-template-columns: 1fr 1fr; gap: 16px; }
   .faq-card { padding: 22px; }
 }
